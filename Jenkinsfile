@@ -1,14 +1,10 @@
 pipeline {
     agent any
     stages {
-        stage('Checkout') {
+        stage('Test Connection') {
             steps {
-                echo 'Code downloaded'
-            }
-        }
-        stage('Build') {
-            steps {
-                echo 'Build step here'
+                sh 'echo "Hello from Jenkins pulling GitHub code"'
+                sh 'ls'
             }
         }
     }
