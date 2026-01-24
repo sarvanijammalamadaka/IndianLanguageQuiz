@@ -5,7 +5,7 @@ pipeline {
             steps {
                 sh 'echo "Files from GitHub:"'
                 sh 'ls'
-                sh 'index.html'
+                sh 'cat index.html'
             }
         }
     }
