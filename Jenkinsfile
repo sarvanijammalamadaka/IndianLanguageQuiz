@@ -3,8 +3,9 @@ pipeline {
     stages {
         stage('Test Connection') {
             steps {
-                sh 'echo "Hello from Jenkins pulling GitHub code"'
+                sh 'echo "Files from GitHub:"'
                 sh 'ls'
+                sh 'index.html'
             }
         }
     }
